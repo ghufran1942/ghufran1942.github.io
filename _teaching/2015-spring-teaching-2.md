@@ -1,11 +1,11 @@
 ---
-title: "Teaching experience 2"
+title: "Teaching Assistant"
 collection: teaching
-type: "Workshop"
-permalink: /teaching/2015-spring-teaching-1
-venue: "University 1, Department"
-date: 2015-01-01
-location: "City, Country"
+type: "Undergraduate"
+permalink: /teaching
+venue: "Aerospace & Mechanical Engineering"
+date: Fall 2023
+location: "Tucson, Arizona"
 ---
 
 This is a description of a teaching experience. You can use markdown like any other post.
