@@ -3,9 +3,9 @@ main:
 
   - title: "Resume"
     url: /files/Resume_MohammadGhufran_4.pdf  
-    
+
   - title: "Publications"
-    url: /publications/
+    url: https://scholar.google.com/citations?hl=en&user=Mmpd5jMAAAAJ&view_op=list_works&sortby=pubdate
 
   # - title: "Talks"
   #   url: /talks/    

@@ -8,6 +8,7 @@ redirect_from:
   - /about.html
 ---
 ---
+
 About Me
 ======
 I'm a current Robotics Master's Student at the University of Arizona working in SMART Lab. Before starting my master's, I did my bachelor's in Mechanical Engineering from Aligarh Muslim University.
