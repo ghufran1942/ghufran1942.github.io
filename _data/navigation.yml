@@ -3,21 +3,21 @@ main:
 
   - title: "Resume"
     url: /files/Resume_MohammadGhufran_4.pdf  
+    
+  - title: "Publications"
+    url: /publications/
 
   # - title: "Talks"
   #   url: /talks/    
 
-- title: "Publications"
-    url: /publications/
-    
   - title: "Teaching"
     url: /teaching/    
     
   - title: "Projects"
-    url: /projects/
+    url: /portfolio/
         
   - title: "Blog"
-    url: /blog/
+    url: /year-archive/
     
   # - title: "Guide"
   #   url: /markdown/
