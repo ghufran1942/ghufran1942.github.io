@@ -84,11 +84,11 @@ author:
   avatar           : "profile.png"
   bio              : "Robotics Master's Student"
   location         : "Tucson, AZ"
-  employer         : "University of Arizona"
+  employer         : 
   pubmed           : 
   googlescholar    : 
   email            :  ghufran1942@gmail.com
-  email            :  ghufran1942@arizona.edu
+  # email            :  ghufran1942@arizona.edu
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :

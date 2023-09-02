@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Ghufran's Personal Website"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,6 +8,19 @@ redirect_from:
   - /about.html
 ---
 
+I'm a current Robotics Master's Student at the University of Arizona working in SMART Lab. Before starting my master's, I did my bachelor's in Mechanical Engineering from Aligarh Muslim University.
+
+Current Work
+======
+I am currently working on implemention of deformable multi-agent system for indoor applications at SMART Lab, AME, University of Arizona. 
+
+Aside from this, I am also working on building a reinforcement learning based trading bot. To achieve this goal, I am studing how can we integrate generative AI with deep QNN.
+
+Connect with me
+======
+I'm looking forward to talking with you at [email](mailto:ghufran1942@gmail.com).
+
+=====
 This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
 
 A data-driven personal website

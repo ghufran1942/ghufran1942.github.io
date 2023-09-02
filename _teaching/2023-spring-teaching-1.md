@@ -1,10 +1,10 @@
 ---
-title: "Teaching Assistant"
+title: "Grader"
 collection: teaching
-type: "Undergraduate"
+type: "AME455 - Engineering Analysis"
 permalink: /teaching
-venue: "Aerospace & Mechanical Engineering"
-date: 2023-08-22
+venue: "Aerospace & Mechancial Engineering"
+date: 2023-01-01
 location: "Tucson, Arizona"
 ---
 

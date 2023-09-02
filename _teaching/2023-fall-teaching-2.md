@@ -1,10 +1,10 @@
 ---
-title: "Grader"
+title: "Teaching Assistant"
 collection: teaching
-type: "Undergraduate"
+type: "AME301 - Control System Design"
 permalink: /teaching
-venue: "Aerospace & Mechancial Engineering"
-date: 2023-01-01
+venue: "Aerospace & Mechanical Engineering"
+date: 2023-08-22
 location: "Tucson, Arizona"
 ---
 
