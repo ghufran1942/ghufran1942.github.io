@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate"
 permalink: /teaching
 venue: "Aerospace & Mechanical Engineering"
-date: Fall 2023
+date: 2023-08-22
 location: "Tucson, Arizona"
 ---
 

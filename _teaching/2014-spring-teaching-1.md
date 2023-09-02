@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate"
 permalink: /teaching
 venue: "Aerospace & Mechancial Engineering"
-date: Spring 2023
+date: 2023-01-01
 location: "Tucson, Arizona"
 ---
 
