@@ -9,7 +9,7 @@ description: A fancy description of the site
 background: "images/background.jpg"
 
 # Site logo
-logo: "images/logo.png"
+# logo: "images/logo.png"
 
 # Resume
 resume: "files/Resume_MohammadGhufran_09102024.pdf"

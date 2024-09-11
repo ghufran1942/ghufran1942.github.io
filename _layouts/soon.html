@@ -23,25 +23,22 @@
         <div class="soon-box" id="soon-box">
             <div class="soon-box-wrapper" id="soon-box-wrapper">
                 <section class="section main">
-                    {% if site.logo %}
+                    <!-- {% if site.logo %}
                         <div class="subsection brand">
                             <img src="{{ site.logo }}" class="logo">
                         </div>
-                    {% endif %}
+                    {% endif %} -->
 
-                    <div class="subsection content">
+                    <!-- <div class="subsection content">
                         {{ content }}
-                    </div>
-                </section>
+                    </div> -->
 
                 <h3>Look at my updated <a href="{{ site.resume }}"> Resume</a></h3>
 
+                </section>
+
                 {% if site.countdown %}
                     {% include countdown.html %}
-                {% endif %}
-
-                {% if site.subscribe %}
-                    {% include subscribe.html %}
                 {% endif %}
 
                 {% if site.social %}
