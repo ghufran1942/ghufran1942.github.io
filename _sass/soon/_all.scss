@@ -13,9 +13,9 @@ $heading-line-height: 1.125 !default;
 $size-large:  1.25rem;
 $size-xlarge: 1.5rem;
 
-$text-color:       #000000 !default;
-$background-color: #ad969a !default;
-$primary-color:    #ffffff !default;
+$text-color:       #ECEFF1 !default;   /* Light grey */
+$background-color: #00796B !default;   /* Muted teal */
+$primary-color:    #F9A825 !default;   /* Soft gold */
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
