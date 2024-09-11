@@ -13,27 +13,27 @@ logo: "images/logo.png"
 
 # Countdown clock
 # (This can be commented out if not required.)
-countdown:
-  # format: "2013-09-25 16:00:00 +0800"
-  launch_date: 2027-01-01
-  # %d, %H, %M, %S available
-  format: "%d days, %H hours, %M minutes, %S seconds"
+# countdown:
+#   # format: "2013-09-25 16:00:00 +0800"
+#   launch_date: 2027-01-01
+#   # %d, %H, %M, %S available
+#   format: "%d days, %H hours, %M minutes, %S seconds"
 
 # Mailing list subscription
 # (This can be commented out if not required.)
-subscribe:
-  action: "/thank-you"
+# subscribe:
+#   action: "/thank-you"
 
 # Social media links
 # (This can be commented out if not required.)
 social:
-  facebook: "#"
-  twitter: "#"
-  google: "#"
-  instagram: "#"
-  pinterest: "#"
-  snapchat: "#"
-  linkedin: "in/#"
+  # facebook: "#"
+  # twitter: "#"
+  # google: "#"
+  instagram: "___ghufran_"
+  # pinterest: "#"
+  snapchat: "ghufran_1942"
+  linkedin: "in/ghufran1942#"
 
 # Build settings
 markdown: kramdown
