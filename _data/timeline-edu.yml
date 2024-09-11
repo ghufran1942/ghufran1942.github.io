@@ -1,0 +1,25 @@
+- title: University of Arizona
+  title-url: https://www.arizona.edu/ 
+  date: Aug 2022 - Aug 2024
+  subtitle: Master
+  tags:
+    - tag: Robotics & Automation
+  timeline-side: right
+
+- title: Aligarh Muslim University
+  title-url: https://www.amu.ac.in/ 
+  date: Aug 2018 - May 2022
+  subtitle: Bachelor
+  tags:
+    - tag: Mechanical Engineering
+  timeline-side: left
+
+- title: Saiyyid Hamid Senior Secondary School, Aligarh Muslim University
+  title-url: https://www.amu.ac.in/schools/saiyyid-hamid-senior-secondary-school-boys/home-page
+  date: Jul 2016 - Mar 2018
+  subtitle: High School
+  tags:
+    - tag: Physics
+    - tag: Chemistry
+    - tag: Mathematics
+  timeline-side: right

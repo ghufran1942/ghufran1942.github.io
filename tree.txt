@@ -1,0 +1,144 @@
+.
+├── assets
+│   ├── css
+│   │   ├── main.min.css
+│   │   └── vendors.min.css
+│   ├── favicon
+│   │   ├── android-chrome-192x192.png
+│   │   ├── android-chrome-512x512.png
+│   │   ├── apple-touch-icon.png
+│   │   ├── favicon-16x16.png
+│   │   ├── favicon-32x32.png
+│   │   ├── favicon.ico
+│   │   └── site.webmanifest
+│   ├── img
+│   │   ├── brands.svg
+│   │   ├── collection
+│   │   │   ├── robot
+│   │   │   │   ├── 10.svg
+│   │   │   │   ├── 11.svg
+│   │   │   │   ├── 12.svg
+│   │   │   │   ├── 13.svg
+│   │   │   │   ├── 14.svg
+│   │   │   │   ├── 15.svg
+│   │   │   │   ├── 1.svg
+│   │   │   │   ├── 2.svg
+│   │   │   │   ├── 3.svg
+│   │   │   │   ├── 4.svg
+│   │   │   │   ├── 5.svg
+│   │   │   │   ├── 6.svg
+│   │   │   │   ├── 7.svg
+│   │   │   │   ├── 8.svg
+│   │   │   │   └── 9.svg
+│   │   │   └── tree.txt
+│   │   └── solid.svg
+│   ├── js
+│   │   ├── app.min.js
+│   │   └── vendors.min.js
+│   ├── particles.json
+│   └── particles.json.bak
+├── _config_dev.yml
+├── _config.yml
+├── _data
+│   ├── projects.yml
+│   ├── skills-frameworks.yml
+│   ├── skills-languages.yml
+│   ├── skills-tools.yml
+│   └── timeline.yml
+├── docs
+│   ├── config.md
+│   ├── data.md
+│   ├── github-repo-info.png
+│   ├── screenshot.gif
+│   ├── screenshot.png
+│   ├── screenshot-thumbnail-250.png
+│   └── screenshot-thumbnail-400.png
+├── files
+│   └── Resume_MohammadGhufran_09102024.pdf
+├── Gemfile
+├── Gemfile.lock
+├── gulpfile.js
+├── _includes
+│   ├── footer.html
+│   ├── landing-page.html
+│   ├── section-aboutme.html
+│   ├── section-contact.html
+│   ├── section-projects.html
+│   ├── section-skills.html
+│   └── section-timeline.html
+├── index.html
+├── _js
+│   ├── app.js
+│   └── vendors
+│       ├── aos.js
+│       ├── jquery-3.5.1.slim.js
+│       └── particles.js
+├── _layouts
+│   └── default.html
+├── LICENSE
+├── package.json
+├── package-lock.json
+├── README.md
+├── _sass
+│   ├── main.scss
+│   └── vendors
+│       ├── aos.css
+│       └── normalize.css
+├── _site
+│   ├── assets
+│   │   ├── css
+│   │   │   ├── main.min.css
+│   │   │   └── vendors.min.css
+│   │   ├── favicon
+│   │   │   ├── android-chrome-192x192.png
+│   │   │   ├── android-chrome-512x512.png
+│   │   │   ├── apple-touch-icon.png
+│   │   │   ├── favicon-16x16.png
+│   │   │   ├── favicon-32x32.png
+│   │   │   ├── favicon.ico
+│   │   │   └── site.webmanifest
+│   │   ├── img
+│   │   │   ├── brands.svg
+│   │   │   ├── collection
+│   │   │   │   └── robot
+│   │   │   │       ├── 10.svg
+│   │   │   │       ├── 11.svg
+│   │   │   │       ├── 12.svg
+│   │   │   │       ├── 13.svg
+│   │   │   │       ├── 14.svg
+│   │   │   │       ├── 15.svg
+│   │   │   │       ├── 1.svg
+│   │   │   │       ├── 2.svg
+│   │   │   │       ├── 3.svg
+│   │   │   │       ├── 4.svg
+│   │   │   │       ├── 5.svg
+│   │   │   │       ├── 6.svg
+│   │   │   │       ├── 7.svg
+│   │   │   │       ├── 8.svg
+│   │   │   │       └── 9.svg
+│   │   │   └── solid.svg
+│   │   ├── js
+│   │   │   ├── app.min.js
+│   │   │   └── vendors.min.js
+│   │   ├── particles.json
+│   │   └── particles.json.bak
+│   ├── docs
+│   │   ├── config.md
+│   │   ├── data.md
+│   │   ├── github-repo-info.png
+│   │   ├── screenshot.gif
+│   │   ├── screenshot.png
+│   │   ├── screenshot-thumbnail-250.png
+│   │   └── screenshot-thumbnail-400.png
+│   ├── files
+│   │   └── Resume_MohammadGhufran_09102024.pdf
+│   ├── index.html
+│   ├── LICENSE
+│   ├── package-lock.json
+│   ├── README.md
+│   ├── tree.txt
+│   └── yarn.lock
+├── tree.txt
+└── yarn.lock
+
+26 directories, 115 files
