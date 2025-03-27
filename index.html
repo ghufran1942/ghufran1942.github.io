@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>About Me - My Portfolio</title>
+        <!-- Tailwind CSS and DaisyUI via CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css"/>
+        <script>
+            tailwind.config = {
+                daisyui: {
+                    themes: ["dark", "light"]
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar bg-base-100 fixed top-0 w-full z-10 shadow">
+            <div class="flex-1">
+                <a class="btn btn-ghost normal-case text-xl" href="index.html">My Portfolio</a>
+            </div>
+            <div class="flex-none">
+                <ul class="menu menu-horizontal p-0">
+                    <li>
+                        <a href="index.html">About</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <button class="btn bg-neutral btn-circle">
+                        <a href="https://github.com/ghufran1942" class="btn btn-ghost btn-circle">
+                            <svg aria-label="GitHub logo" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="white" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path></svg>
+                        </a>
+                    </button>
+                    </li>
+                        <li>
+                            <button class="btn bg-[#0967C2] border-[#0059b3] btn-circle">
+                            <a href="https://linkedin.com/in/ghufran1942" target="_blank" class="btn btn-ghost btn-circle">
+                                <svg aria-label="LinkedIn logo" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="white" d="M26.111,3H5.889c-1.595,0-2.889,1.293-2.889,2.889V26.111c0,1.595,1.293,2.889,2.889,2.889H26.111c1.595,0,2.889-1.293,2.889-2.889V5.889c0-1.595-1.293-2.889-2.889-2.889ZM10.861,25.389h-3.877V12.87h3.877v12.519Zm-1.957-14.158c-1.267,0-2.293-1.034-2.293-2.31s1.026-2.31,2.293-2.31,2.292,1.034,2.292,2.31-1.026,2.31-2.292,2.31Zm16.485,14.158h-3.858v-6.571c0-1.802-.685-2.809-2.111-2.809-1.551,0-2.362,1.048-2.362,2.809v6.571h-3.718V12.87h3.718v1.686s1.118-2.069,3.775-2.069,4.556,1.621,4.556,4.975v7.926Z" fill-rule="evenodd"></path></svg>
+                            </a>
+                        </button>
+                        </li>
+                    <li>
+                        <button class="btn btn-ghost" onclick="toggleTheme()">
+                            <span id="theme-icon"></span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- About Me Content -->
+        <!-- <section class="pt-20 container mx-auto px-4"> -->
+        <div
+            class="hero min-h-screen" style="background-image: url(https://images.pexels.com/photos/73910/mars-mars-rover-space-travel-robot-73910.jpeg);">
+            <!-- The overlay uses base color from the theme, with some transparency -->
+            <div class="hero-overlay bg-base-200/20"></div>
+
+            <!-- Hero content that inherits the theme's text color -->
+            <div
+                class="hero-content text-base-content mt-8">
+                <!-- Box uses base-100 with partial opacity so you can still see the background image -->
+                <div class="max-w-md glass p-6 rounded shadow">
+                    <img src="assets/your-photo.jpg" alt="Your Photo" class="rounded-full w-32 h-32 mx-auto shadow-md mb-6 mt-8"/>
+                    <h1 class="mb-5 text-4xl font-bold text-center">Hi, I'm
+                        <br><span class="text-gray-500 text-4xl">Mohammad Ghufran</span>
+                    </h1>
+                    <p class="mb-5">
+                        I'm a robotics engineer driven by curiosity, imagination, and a passion for shaping the future inspired by science fiction and a genuine desire to simplify life through robotics.
+                    </p>
+                    <p class="mb-5">
+                        My strengths include exceptional problem-solving skills, ethical responsibility, and the ability to excel under high-pressure conditions, traits that place me among the top tier of robotics professionals.
+                    </p>
+                    <p class="mb-5">
+                        Motivated by the desire to make a meaningful difference, I focus on creating robotic solutions that significantly improve everyday lives, particularly in areas where they are most needed. I'm currently open to new opportunities that allow me to innovate, collaborate, and apply my skills broadly across the field of robotics.
+                    </p>
+                    <!-- <button class="btn btn-primary mb-6 mx-auto href='contact.html'">Contact Me</button> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Timelines Section -->
+        <!-- <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8"> -->
+        <!-- Experience Timeline -->
+            <h2 class="text-5xl font-bold mb-4 text-center mt-8"> Experience</h2>
+        <ul
+            class="text-xl timeline timeline-vertical">
+            <!-- Intern - Drone Development -->
+            <li>
+                <div class="timeline-start font-bold">Jun 2022 - Jul 2022</div>
+                <div class="timeline-middle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor" class="h-8 w-8">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/>
+                    </svg>
+                </div>
+                <div class="text-lg timeline-end timeline-box">
+                    <strong>Intern - Drone Development
+                    </strong><br>
+                    Engineering &amp; Environmental Solutions LTD<br>
+                    Aligarh, India
+                    <!-- Tested and integrated agriculture drones with nano urea, optimizing precision fertilization and ensuring flight stability. -->
+                </div>
+                <hr/>
+            </li>
+            <!-- Student Researcher -->
+            <li>
+                <hr/>
+                <div class="timeline-start font-bold">Nov 2022 - Jun 2023</div>
+                <div class="timeline-middle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor" class="h-8 w-8">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/>
+                    </svg>
+                </div>
+                <div class="text-lg timeline-end timeline-box">
+                    <strong>Student Researcher
+                    </strong>
+                    <br>
+                    University of Arizona<br>
+                    Tucson, AZ
+                    <!-- Developed an A* algorithm for drone navigation, integrated SLAM with LIDAR, and implemented adaptive PID control for UAVs. -->
+                </div>
+                <hr/>
+            </li>
+            <!-- Teaching Assistant -->
+            <li>
+                <hr/>
+                <div class="timeline-start font-bold">Aug 2023 - May 2024</div>
+                <div class="timeline-middle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor" class="h-8 w-8">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/>
+                    </svg>
+                </div>
+                <div class="text-lg timeline-end timeline-box">
+                    <strong>Teaching Assistant
+                    </strong>
+                    <br>
+                    University of Arizona<br>
+                    Tucson, AZ
+                    <!-- Taught MATLAB simulations and debugging sessions, mentoring students and grading assignments. -->
+                </div>
+                <hr/>
+            </li>
+            <!-- Research Assistant -->
+            <li>
+                <hr/>
+                <div class="timeline-start font-bold">Aug 2023 - Aug 2024</div>
+                <div class="timeline-middle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor" class="h-8 w-8">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/>
+                    </svg>
+                </div>
+                <div class="text-lg timeline-end timeline-box">
+                    <strong>Research Assistant</strong>
+                    <br>
+                    University of Arizona<br>
+                    Tucson, AZ
+                    <!-- Tested real-time control algorithms and integrated embedded systems for robotics platforms. -->
+                </div>
+                <hr/>
+            </li>
+            <!-- Research Assistant II -->
+            <li>
+                <hr/>
+                <div class="timeline-start font-bold">Sept 2024 - Dec 2024</div>
+                <div class="timeline-middle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor" class="h-8 w-8">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/>
+                    </svg>
+                </div>
+                <div class="text-lg timeline-end timeline-box">
+                    <strong>Research Assistant II</strong>
+                    <br>
+                    University of Arizona<br>
+                    Tucson, AZ
+                    <!-- Developed autonomous navigation algorithms and computer vision pipelines using ROS2, Python, and C++; mentored students in robotics projects. -->
+                </div>
+                <hr/>
+            </li>
+            <!-- Researcher -->
+            <li>
+                <hr/>
+                <div class="timeline-start font-bold">Jan 2025 - Present</div>
+                <div class="timeline-middle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor" class="h-8 w-8">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/>
+                    </svg>
+                </div>
+                <div class="text-lg timeline-end timeline-box">
+                    <strong>Researcher</strong>
+                    <br>
+                    University of Arizona<br>
+                    Tucson, AZ
+                    <!-- Developed optimized CSF laser absorption testing setup and integrated sensor placement strategies to enhance experimental accuracy. -->
+                </div>
+            </li>
+        </ul>
+
+
+        <!-- Education -->
+
+
+        <h2 class="text-5xl font-bold mb-4 text-center mt-8">Education</h2>
+        <ul
+            class="text-xl timeline timeline-vertical">
+            <!-- Bachelor's -->
+            <li>
+                <div class="timeline-start font-bold">Aug 2018 - May 2022</div>
+                <div class="timeline-middle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor" class="h-8 w-8">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/>
+                    </svg>
+                </div>
+                <div class="text-lg timeline-end timeline-box">
+                    <strong>Bachelor of Technology in Mechanical Engineering
+                    </strong>
+                    <br>
+                    Aligarh Muslim University<br>
+                    Aligarh, India<br>
+                    <!-- Focused on mechanical engineering fundamentals and design. -->
+                </div>
+                <hr/>
+            </li>
+            <!-- Master's -->
+            <li>
+                <hr/>
+                <div class="timeline-start font-bold">Aug 2022 - Aug 2024</div>
+                <div class="timeline-middle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor" class="h-8 w-8">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/>
+                    </svg>
+                </div>
+                <div class="text-lg timeline-end timeline-box">
+                    <strong>Master of Engineering in Robotics and Automation
+                    </strong>
+                    <br>
+                    University of Arizona<br>
+                    Tucson, AZ
+                    <br>
+                    <!-- Specialized in robotics and automation technologies. -->
+                </div>
+            </li>
+        </ul>
+        <!-- </div> -->
+        <!-- Footer -->
+        <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
+            <nav class="grid grid-flow-col gap-4">
+                <a href="../index.html" class="link link-hover">About</a>
+                <a href="../portfolio.html" class="link link-hover">Portfolio</a>
+                <a href="../blog.html" class="link link-hover">Blog</a>
+                <a href="../contact.html" class="link link-hover">Contact</a>
+            </nav> 
+            <aside>
+                <p> Built with <a href="https://daisyui.com" target="_blank" rel="noopener noreferrer">DaisyUI</a></p>
+                <!-- <p>Copyright © 2025 - All rights reserved</p> -->
+            </aside>
+        </footer>
+    <script src="main.js"></script>
+    </body>
+</html>
