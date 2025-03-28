@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Title - My Portfolio</title>
+    <!-- Tailwind CSS and DaisyUI via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <script>
+        tailwind.config = {
+            daisyui: {
+                themes: ["dark", "light"]
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar bg-base-100 fixed top-0 w-full z-10 shadow">
+        <div class="flex-1">
+            <a class="btn btn-ghost normal-case text-xl" href="../index.html">My Portfolio</a>
+        </div>
+        <div class="flex-none">
+            <ul class="menu menu-horizontal p-0">
+                <li>
+                    <a href="../index.html">About</a>
+                </li>
+                <li>
+                    <a href="../portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="../blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="../contact.html">Contact</a>
+                </li>
+                <li>
+                    <button class="btn bg-neutral btn-circle">
+                        <a href="https://github.com/ghufran1942" class="btn btn-ghost btn-circle">
+                            <svg aria-label="GitHub logo" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24">
+                                <path fill="white"
+                                    d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn bg-[#0967C2] border-[#0059b3] btn-circle">
+                        <a href="https://linkedin.com/in/ghufran1942" target="_blank" class="btn btn-ghost btn-circle">
+                            <svg aria-label="LinkedIn logo" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 32 32">
+                                <path fill="white"
+                                    d="M26.111,3H5.889c-1.595,0-2.889,1.293-2.889,2.889V26.111c0,1.595,1.293,2.889,2.889,2.889H26.111c1.595,0,2.889-1.293,2.889-2.889V5.889c0-1.595-1.293-2.889-2.889-2.889ZM10.861,25.389h-3.877V12.87h3.877v12.519Zm-1.957-14.158c-1.267,0-2.293-1.034-2.293-2.31s1.026-2.31,2.293-2.31,2.292,1.034,2.292,2.31-1.026,2.31-2.292,2.31Zm16.485,14.158h-3.858v-6.571c0-1.802-.685-2.809-2.111-2.809-1.551,0-2.362,1.048-2.362,2.809v6.571h-3.718V12.87h3.718v1.686s1.118-2.069,3.775-2.069,4.556,1.621,4.556,4.975v7.926Z"
+                                    fill-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn btn-ghost" onclick="toggleTheme()">
+                        <span id="theme-icon"></span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Main Body -->
+    <section class="pt-20 container mx-auto px-4">
+        <h1 class="text-3xl font-bold mb-8">Other Minor Mechanical Projects</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Project Card Template -->
+
+            <!-- Version 1 -->
+            <!-- <a 
+                                      href="projects/project_template.html" 
+                                      class="card bg-base-100 shadow-xl border border-gray-200 dark:border-gray-700 hover:shadow-2xl transition"
+                                      >
+                                        <figure>
+                                            <div class="skeleton h-64 w-full"></div>
+                                            <img src="assets/project1.jpg" alt="Project Template" /> 
+                                        </figure>
+                                      <div class="card-body">
+                                          <h2 class="card-title">Project Template</h2>
+                                          <p>Brief description of the project.</p>
+                                      </div>
+                                      </a> -->
+
+            <!-- Version 2 -->
+
+            <!-- <a href="projects/hrc.html"
+                class="card bg-base-100 shadow-xl border border-gray-200 dark:border-gray-700 hover:shadow-2xl transition">
+                <figure> -->
+                    <!-- <div class="skeleton h-64 w-full"></div> -->
+                    <!-- <img src="assets/images/PXL_20240313_003741065.jpg" alt="Heterogenous Robot Coordination" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Heterogenous Robot Coordination</h2> -->
+                    <!-- <p>Brief description of the project.</p> -->
+                <!-- </div>
+            </a> -->
+
+            <div class="mockup-window bg-base-100 border border-base-300">
+                <iframe 
+                  src="../assets/projects/engine_html.html" 
+                  class="w-full h-[500px] border-0" 
+                  title="Project Portfolio"
+                  loading="lazy"
+                ></iframe>
+              </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
+        <nav class="grid grid-flow-col gap-4">
+            <a href="../index.html" class="link link-hover">About</a>
+            <a href="../portfolio.html" class="link link-hover">Portfolio</a>
+            <a href="../blog.html" class="link link-hover">Blog</a>
+            <a href="../contact.html" class="link link-hover">Contact</a>
+        </nav>
+        <aside>
+            <p> Built with <a href="https://daisyui.com" target="_blank" rel="noopener noreferrer">DaisyUI</a></p>
+            <!-- <p>Copyright © 2025 - All rights reserved</p> -->
+        </aside>
+    </footer>
+
+    <!-- Theme Toggle Script -->
+    <script src="../main.js"></script>
+
+</body>
+
+</html>
