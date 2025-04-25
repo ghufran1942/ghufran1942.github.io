@@ -230,48 +230,107 @@
 
                     <!-- What was Learned Section -->
                     <div class="mb-8">
-                        <div class="flex items-center mb-4">
+                        <h3 class="text-xl font-bold mb-4 flex items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6 text-warning mr-3">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
                             </svg>
-                            <h3 class="text-xl font-bold">What was Learned</h3>
-                        </div>
-                        <div class="bg-base-200 p-6 rounded-lg shadow-inner">
-                            <!-- <p class="mb-4">The document does not explicitly mention lessons learned. Could you provide
-                                insights into:</p> -->
-                            <ul class="list-disc pl-6 space-y-2">
-                                <li>
-                                    <strong>API Integration Challenges</strong>
-                                    <ul class="list-disc pl-6">
-                                        <li>Managed expired keys, rate limits, and incomplete data from third-party APIs.</li>
-                                        <li>Implemented fallback mechanisms to handle missing or inconsistent responses.</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <strong>Graph Construction & Abstraction</strong>
-                                    <ul class="list-disc pl-6">
-                                        <li>Modeled real-world travel as a directed graph with weighted edges for cost and time.</li>
-                                        <li>Balanced complexity with simplicity to maintain performance and clarity.</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <strong>Pathfinding with A* Algorithm</strong>
-                                    <ul class="list-disc pl-6">
-                                        <li>Experimented with heuristic design to improve pathfinding efficiency.</li>
-                                        <li>Learned how poor heuristics can lead to suboptimal or slow results.</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <strong>System Robustness and Architecture</strong>
-                                    <ul class="list-disc pl-6">
-                                        <li>Built a modular, end-to-end system connecting user input, APIs, and pathfinding.</li>
-                                        <li>Added error handling and validation layers to deal with real-world data variability.</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>                        
+                            What was Learned
+                        </h3>
+
+                        <!-- <div class="bg-base-200 p-6 rounded-lg shadow-inner"> -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                
+                                <!-- API Integration Challenges Card -->
+                                <div class="card bg-base-200 shadow-md hover:shadow-lg transition-shadow">
+                                    <div class="card-body p-4">
+                                        <h4 class="card-title text-primary text-lg flex items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M12 3v1.5M12 19.5V21M4.219 4.219l1.061 1.061M18.719 18.719l1.061 1.061M3 12h1.5M19.5 12H21M4.219 19.781l1.061-1.061M18.719 5.281l1.061-1.061M7.5 12a4.5 4.5 0 109 0 4.5 4.5 0 10-9 0z" />
+                                            </svg>
+                                            API Integration Challenges
+                                        </h4>
+                                        <p>
+                                            <ul>
+                                                <li>Handled expired keys, rate limits, and incomplete data from Google Maps and Booking.com APIs.</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Graph Construction & Abstraction Card -->
+                                <div class="card bg-base-200 shadow-md hover:shadow-lg transition-shadow">
+                                    <div class="card-body p-4">
+                                        <h4 class="card-title text-primary text-lg flex items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M13 16h-1v-4h-1m1 4v-4m-6 8h12a2 2 0 002-2V6a2 2 0 00-2-2H7a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                            </svg>
+                                            Graph Construction & Abstraction
+                                        </h4>
+                                        <p>
+                                            <ul>
+                                                <li>
+                                                    Built a directed graph to model travel routes using <strong>networkx</strong>, assigning meaningful weights for time and cost.
+                                                </li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Pathfinding with A* Algorithm Card -->
+                                <div class="card bg-base-200 shadow-md hover:shadow-lg transition-shadow">
+                                    <div class="card-body p-4">
+                                        <h4 class="card-title text-primary text-lg flex items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                            </svg>
+                                            Pathfinding with A* Algorithm
+                                        </h4>
+                                        <p>
+                                            <ul>
+                                                <li>
+                                                    Explored the impact of heuristic selection on A* search performance. 
+                                                </li>
+                                                <li>
+                                                    Learned how to tune pathfinding logic to optimize for speed, and cost-efficiency.
+                                                </li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            
+                                <!-- System Architecture & Robustness Card -->
+                                <div class="card bg-base-200 shadow-md hover:shadow-lg transition-shadow">
+                                    <div class="card-body p-4">
+                                        <h4 class="card-title text-primary text-lg flex items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M12 6v6l4 2" />
+                                            </svg>
+                                            System Architecture & Robustness
+                                        </h4>
+                                        <p>
+                                            <ul>
+                                                <li>
+                                                    Designed a modular system integrating user inputs, APIs, graph logic, and optimization. 
+                                                </li>
+                                                <li>
+                                                    Implemented robust error handling to support real-time data variability and improve system stability.
+                                                </li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- </div>                       -->
                     </div>
 
                     <!-- What was Achieved Section -->
