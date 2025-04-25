@@ -239,9 +239,32 @@ Image 3: Iterated designs for camera mounts (refer to page 30 of WPR.pdf).
   - Visualized the graph and highlighted the A* path.
 
 #### What Was Learned
-- The document does not explicitly mention lessons learned. Could you provide insights into:
-  - Challenges faced during API integration or graph construction?
-  - Key takeaways from optimizing routes using the A* algorithm?
+Here’s the "What Was Learned" section condensed into **4 strong bullet points**:
+
+---
+
+### What Was Learned
+Got it — you want a **main bullet → sub-bullet** style structure, which looks clean and professional for a portfolio.
+
+Here’s the "What Was Learned" section rewritten like that:
+
+---
+
+### What Was Learned
+  - **API Integration**
+    - Handled authentication, rate limits, and incomplete data responses from Google Maps and Booking.com.
+    
+  - **Graph Modeling**
+    - Built a directed graph to represent multi-modal travel routes with cost and time as weighted edges.
+    - Balanced real-world transportation complexity with efficient, scalable graph abstraction.
+
+  - **Pathfinding Optimization**
+    - Implemented the A* algorithm with careful heuristic design for realistic and efficient route finding.
+    - Learned how different heuristics impact search performance and travel plan quality.
+
+  - **System Architecture and Robustness**
+    - Designed modular, scalable code to connect user input, API data, graph construction, and optimization logic.
+    - Built error handling and validation layers to gracefully manage dynamic and unpredictable real-world data.
 
 #### What Was Achieved
 - Successfully created an interactive system for planning multi-modal travel routes.
