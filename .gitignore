@@ -1,0 +1,6 @@
+Gemfile.lock
+_sass/
+_site/
+assets/js/dist/
+node_modules/
+package-lock.json
