@@ -27,14 +27,46 @@
       </li>
       <!-- the real tabs -->
       {% for tab in site.tabs %}
-        <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
-          <a href="{{ tab.url | relative_url }}" class="nav-link">
-            <i class="fa-fw {{ tab.icon }}"></i>
-            {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
+        {% if tab.url == '/projects/' %}
+          <!-- Projects with sub-categories -->
+          <li class="nav-item{% if page.url contains '/projects/' %}{{ " active" }}{% endif %}">
+            <a href="{{ tab.url | relative_url }}" class="nav-link">
+              <i class="fa-fw {{ tab.icon }}"></i>
+              <span>{{ site.data.locales[include.lang].tabs.projects | default: tab.title | upcase }}</span>
+            </a>
+            <!-- Project sub-categories -->
+            <ul class="nav sub-nav">
+              <li class="nav-item{% if page.url == '/projects/robotics/' %}{{ " active" }}{% endif %}">
+                <a href="/projects/robotics/" class="nav-link sub-nav-link">
+                  <i class="fa-fw fas fa-robot"></i>
+                  <span>Robotics</span>
+                </a>
+              </li>
+              <li class="nav-item{% if page.url == '/projects/mechanical/' %}{{ " active" }}{% endif %}">
+                <a href="/projects/mechanical/" class="nav-link sub-nav-link">
+                  <i class="fa-fw fas fa-cogs"></i>
+                  <span>Mechanical</span>
+                </a>
+              </li>
+              <!-- <li class="nav-item{% if page.url == '/projects/computer/' %}{{ " active" }}{% endif %}">
+                <a href="/projects/computer/" class="nav-link sub-nav-link">
+                  <i class="fa-fw fas fa-laptop-code"></i>
+                  <span>Computer</span>
+                </a>
+              </li> -->
+            </ul>
+          </li>
+        {% else %}
+          <!-- Regular tabs -->
+          <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
+            <a href="{{ tab.url | relative_url }}" class="nav-link">
+              <i class="fa-fw {{ tab.icon }}"></i>
+              {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
 
-            <span>{{ site.data.locales[include.lang].tabs.[tab_name] | default: tab.title | upcase }}</span>
-          </a>
-        </li>
+              <span>{{ site.data.locales[include.lang].tabs.[tab_name] | default: tab.title | upcase }}</span>
+            </a>
+          </li>
+        {% endif %}
         <!-- .nav-item -->
       {% endfor %}
     </ul>

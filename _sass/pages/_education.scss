@@ -1,7 +1,7 @@
 @use '../abstracts/breakpoints' as bp;
 @use '../abstracts/placeholders';
 
-#archives {
+#education {
   letter-spacing: 0.03rem;
 
   @include bp.lt(bp.get(sm)) {
@@ -92,7 +92,7 @@
     &:last-child li:last-child::before {
       height: 1.5rem;
     }
-  } /* #archives ul */
+  } /* #education ul */
 
   .date {
     white-space: nowrap;
@@ -137,4 +137,4 @@
       z-index: 1;
     }
   }
-} /* #archives */
+} /* #education */

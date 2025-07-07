@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+{% include lang.html %}
+
+<article class="px-1">
+  <header class="project-header">
+    <h1 class="dynamic-title">
+      {{ page.title }}
+    </h1>
+    
+    {% if page.description %}
+      <div class="project-description text-muted mb-3">
+        {{ page.description }}
+      </div>
+    {% endif %}
+    
+    {% if page.tech_stack %}
+      <div class="tech-stack mb-3">
+        {% for tech in page.tech_stack %}
+          <span class="badge bg-light text-dark me-1 mb-1">{{ tech }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+    
+    {% if page.date %}
+      <div class="project-date text-muted mb-3">
+        <i class="far fa-calendar fa-fw me-1"></i>
+        {% include datetime.html date=page.date lang=lang %}
+      </div>
+    {% endif %}
+  </header>
+  
+  <div class="content">
+    {{ content }}
+  </div>
+</article> 

@@ -121,7 +121,6 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
   }
 
   ul {
-    margin-bottom: 2rem;
 
     li.nav-item {
       opacity: 0.9;
@@ -253,6 +252,80 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
   #main-wrapper {
     @include bp.lt(bp.get(lg)) {
       transform: translateX(v.$sidebar-width);
+    }
+  }
+}
+
+/* Sidebar Sub-navigation Styles */
+
+.sub-nav {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0; /* Remove extra bottom margin */
+  border-left: 2px solid var(--sidebar-border-color);
+  padding-left: 0.5rem;
+
+  .nav-item {
+    margin-bottom: 0.25rem;
+
+    &:last-child {
+      margin-bottom: 0; /* Remove margin from last sub-item */
+    }
+
+    .sub-nav-link {
+      font-size: 0.85rem;
+      padding: 0.25rem 0.5rem;
+      color: var(--sidebar-muted-color);
+      text-decoration: none;
+      border-radius: 4px;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: var(--sidebar-active-color);
+        background-color: var(--sidebar-hover-bg);
+        text-decoration: none;
+      }
+
+      i {
+        font-size: 0.75rem;
+        margin-right: 0.5rem;
+        width: 1rem;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 500;
+      }
+    }
+
+    &.active .sub-nav-link {
+      color: var(--sidebar-active-color);
+      background-color: var(--sidebar-hover-bg);
+      font-weight: 600;
+    }
+  }
+}
+
+/* Ensure consistent spacing between top-level nav items */
+#sidebar ul li.nav-item {
+  &:not(:first-child) {
+    margin-top: 0.25rem;
+  }
+  
+  /* Remove extra spacing after items with sub-nav */
+  &:has(.sub-nav) {
+    margin-bottom: 0.25rem; /* Consistent with other items */
+  }
+}
+
+/* Responsive adjustments for sub-nav */
+@media (max-width: 767.98px) {
+  .sub-nav {
+    margin-left: 0.5rem;
+    
+    .nav-item .sub-nav-link {
+      font-size: 0.8rem;
+      padding: 0.2rem 0.4rem;
     }
   }
 }

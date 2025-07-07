@@ -1,0 +1,122 @@
+/* Skills Page Styles */
+
+$radius-lg: 15px;
+
+.skills-category {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: var(--card-bg);
+  border: 1px solid var(--main-border-color);
+  border-radius: $radius-lg;
+  box-shadow: var(--card-shadow);
+  
+  h3 {
+    color: var(--heading-color);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--main-border-color);
+  }
+  
+  .skill-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+    
+    .skill-name {
+      flex: 0 0 200px;
+      font-weight: 500;
+      color: var(--text-color);
+      font-size: 0.95rem;
+      
+      @media (max-width: 767.98px) {
+        flex: 0 0 150px;
+        font-size: 0.9rem;
+      }
+    }
+    
+    .skill-level {
+      flex: 1;
+      height: 8px;
+      background-color: var(--main-border-color);
+      border-radius: 4px;
+      overflow: hidden;
+      margin-left: 1rem;
+      
+      .skill-bar {
+        height: 100%;
+        background: linear-gradient(90deg, var(--link-color) 0%, var(--btn-share-hover-color) 100%);
+        border-radius: 4px;
+        transition: width 0.8s ease-in-out;
+        position: relative;
+        
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.3) 50%, transparent 100%);
+          animation: shimmer 2s infinite;
+        }
+      }
+    }
+  }
+}
+
+/* Animation for skill bars */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Dark mode adjustments */
+[data-mode="dark"] {
+  .skills-category {
+    background-color: var(--card-bg);
+    border-color: var(--main-border-color);
+    
+    .skill-level {
+      background-color: var(--main-border-color);
+    }
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+  .skills-category {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    
+    h3 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+    
+    .skill-item {
+      flex-direction: column;
+      align-items: flex-start;
+      
+      .skill-name {
+        flex: none;
+        margin-bottom: 0.5rem;
+      }
+      
+      .skill-level {
+        flex: none;
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+  }
+} 

@@ -1,11 +1,12 @@
 ---
 title: Text and Typography
-description: Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.
+description: >-
+  This is a demo post that shows several typography and text rendering features of Chirpy.
 author: cotes
-date: 2019-08-08 11:33:00 +0800
-categories: [Blogging, Demo]
-tags: [typography]
-pin: true
+date: 2019-08-08 20:55:00 +0800
+category: Blogging
+tags: [typography, text]
+pin: false
 math: true
 mermaid: true
 image:

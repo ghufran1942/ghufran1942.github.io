@@ -1,0 +1,132 @@
+---
+layout: page
+---
+
+<div class="certs-awards-layout">
+  <div class="page-header mb-5">
+    {% if page.description %}
+    <p class="page-description">{{ page.description }}</p>
+    {% endif %}
+  </div>
+
+  <!-- Certificates Section -->
+  {% if page.certificates %}
+  <section class="certificates-section mb-5">
+    <div class="section-header mb-4">
+      <h2 class="section-title">
+        <i class="fas fa-certificate me-2"></i>Certificates
+      </h2>
+      <!-- <p class="section-subtitle">Specialized training and professional development</p> -->
+    </div>
+    
+    <div class="cards-grid">
+      {% for cert in page.certificates %}
+      <div class="certificate-card">
+        <div class="card-header">
+          <h3 class="card-title">{{ cert.title }}</h3>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <p class="card-authority">
+              <i class="fas fa-building me-1"></i>{{ cert.authority }}
+            </p>
+            <p class="card-year">
+              <i class="fas fa-calendar me-1"></i>{{ cert.year }}
+            </p>
+          </div>
+        </div>
+        {% if cert.link %}
+        <div class="card-footer">
+          <a href="{{ cert.link }}" class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-external-link-alt me-1"></i>View Details
+          </a>
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- Awards Section -->
+  {% if page.awards %}
+  <section class="awards-section">
+    <div class="section-header mb-4">
+      <h2 class="section-title">
+        <i class="fas fa-trophy me-2"></i>Awards & Recognition
+      </h2>
+      <p class="section-subtitle">Honors and achievements in robotics and engineering</p>
+    </div>
+    
+    <div class="cards-grid">
+      {% for award in page.awards %}
+      <div class="award-card">
+        {% if award.image %}
+        <div class="card-image">
+          <img src="{{ award.image | relative_url }}" alt="{{ award.title }}" class="award-img" data-award="{{ forloop.index }}">
+        </div>
+        {% endif %}
+        <div class="card-header">
+          <h3 class="card-title">{{ award.title }}</h3>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <p class="card-authority">
+              <i class="fas fa-award me-1"></i>{{ award.authority }}
+            </p>
+            <p class="card-year">
+              <i class="fas fa-calendar me-1"></i>{{ award.year }}
+            </p>
+          </div>
+          {% if award.description %}
+          <div class="card-description">
+            <p>{{ award.description }}</p>
+          </div>
+          {% endif %}
+        </div>
+        {% if award.link %}
+        <div class="card-footer">
+          <a href="{{ award.link }}" class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-external-link-alt me-1"></i>Learn More
+          </a>
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+</div>
+
+<!-- Image Modal -->
+<div id="imageModal" class="modal fade" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="imageModalLabel">Award Image</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img id="modalImage" src="" alt="Award Image" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Image modal functionality
+  const awardImages = document.querySelectorAll('.award-img');
+  const modal = document.getElementById('imageModal');
+  const modalImage = document.getElementById('modalImage');
+  
+  awardImages.forEach(img => {
+    img.addEventListener('click', function() {
+      modalImage.src = this.src;
+      modalImage.alt = this.alt;
+      const modalInstance = new bootstrap.Modal(modal);
+      modalInstance.show();
+    });
+  });
+});
+</script> 

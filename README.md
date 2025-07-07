@@ -18,26 +18,133 @@
 
 </div>
 
+# Robotics Engineer Portfolio
+
+A Jekyll-based portfolio website built with the Chirpy theme, showcasing robotics projects, computer vision systems, and mechatronics engineering work.
+
 ## Features
 
-- Dark Theme
-- Localized UI language
-- Pinned Posts on Home Page
-- Hierarchical Categories
-- Trending Tags
-- Table of Contents
-- Last Modified Date
-- Syntax Highlighting
-- Mathematical Expressions
-- Mermaid Diagrams & Flowcharts
-- Dark Mode Images
-- Embed Media
-- Comment Systems
-- Built-in Search
-- Atom Feeds
-- PWA
-- Web Analytics
-- SEO & Performance Optimization
+### 🚀 **Projects Section**
+- **Project Collection**: Organized projects in `_projects/` directory
+- **Project Cards**: Beautiful card layout with thumbnails, tech stack, and descriptions
+- **Individual Project Pages**: Detailed project pages with full content
+- **Responsive Design**: Mobile-friendly project grid layout
+
+### 🛠 **Skills Section**
+- **Categorized Skills**: Grouped by Programming, Robotics, Tools, Hardware, and Software Development
+- **Progress Bars**: Visual skill level indicators with animations
+- **Clean Design**: Minimal, professional appearance matching Chirpy's aesthetic
+
+### 🎓 **Education Section**
+- **Academic Background**: Master's and Bachelor's degrees in robotics and mechatronics
+- **Certifications**: Professional certifications in ROS, Computer Vision, and Embedded Systems
+- **Academic Projects**: Research and capstone projects with detailed descriptions
+
+### 📱 **Navigation**
+- **Simplified Sidebar**: Clean navigation with Home, Projects, Education, Skills, and Blog
+- **Integrated About**: About section merged into the homepage for better user experience
+- **Mobile Responsive**: Optimized for all device sizes
+- **Dark/Light Theme**: Automatic theme switching support
+
+## Project Structure
+
+```
+├── _projects/           # Project collection
+│   ├── autonomous-robot.md
+│   └── computer-vision-system.md
+├── _tabs/              # Navigation tabs
+│   ├── projects.md     # Projects redirect
+│   ├── education.md    # Education page (renamed from archives)
+│   ├── skills.md       # Skills page
+│   └── blog.md         # Blog redirect
+├── _layouts/           # Custom layouts
+│   ├── project.html    # Individual project layout
+│   └── home.html       # Updated home layout with about section
+├── _sass/pages/        # Custom styles
+│   ├── _projects.scss  # Project page styles
+│   ├── _skills.scss    # Skills page styles
+│   └── _home.scss      # Home page styles
+└── projects.html       # Projects index page
+```
+
+## Navigation Structure
+
+The site now features a streamlined navigation:
+
+1. **Home** 🏠 - About section + latest blog posts
+2. **Projects** 📊 - Portfolio of robotics and mechatronics projects
+3. **Education** 🎓 - Academic background and certifications
+4. **Skills** 🛠️ - Technical skills with progress indicators
+5. **Blog** 📝 - Technical articles and tutorials
+
+## Adding New Projects
+
+1. Create a new markdown file in `_projects/`
+2. Use this front matter structure:
+   ```yaml
+   ---
+   layout: project
+   title: "Project Title"
+   description: "Brief project description"
+   tech_stack: ["Technology 1", "Technology 2"]
+   thumbnail: "/assets/img/projects/your-image.jpg"
+   link: "/projects/your-project"
+   date: 2023-12-01
+   ---
+   ```
+
+## Customization
+
+### Colors and Styling
+- All styles use Chirpy's CSS variables for consistent theming
+- Supports both light and dark modes automatically
+- Mobile-responsive design
+
+### Skills Categories
+- Edit `_tabs/skills.md` to modify skill categories and levels
+- Progress bar percentages can be adjusted (0-100%)
+- Add new categories by following the existing structure
+
+### Education Content
+- Update `_tabs/education.md` with your academic background
+- Add certifications, degrees, and academic projects
+- Customize the content to match your experience
+
+## Development
+
+### Prerequisites
+- Ruby 3.0+
+- Node.js 16+
+- Jekyll 4.0+
+
+### Setup
+```bash
+# Install Ruby dependencies
+bundle install
+
+# Install Node.js dependencies
+npm install
+
+# Build assets
+npm run build:js
+npm run build:css
+
+# Start development server
+bundle exec jekyll serve --livereload
+```
+
+### Building for Production
+```bash
+# Build all assets
+npm run build
+
+# Build Jekyll site
+bundle exec jekyll build
+```
+
+## License
+
+This project is based on the [Chirpy Jekyll Theme](https://github.com/cotes2020/jekyll-theme-chirpy) and is licensed under the MIT License.
 
 ## Documentation
 

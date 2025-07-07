@@ -47,6 +47,20 @@ body {
 }
 
 h1.dynamic-title {
+  color: var(--heading-color);
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+  
+  @media (max-width: 576px) {
+    font-size: 1.75rem;
+  }
+  
   @include bp.lt(bp.get(lg)) {
     display: none;
 

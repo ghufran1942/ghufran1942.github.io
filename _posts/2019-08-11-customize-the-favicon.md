@@ -1,9 +1,12 @@
 ---
 title: Customize the Favicon
+description: >-
+  How to customize the favicon of your Chirpy-based website.
 author: cotes
-date: 2019-08-11 00:34:00 +0800
-categories: [Blogging, Tutorial]
+date: 2019-08-11 14:10:15 +0800
+category: Blogging
 tags: [favicon]
+pin: false
 ---
 
 The [favicons](https://www.favicon-generator.org/about/) of [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/) are placed in the directory `assets/img/favicons/`{: .filepath}. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons.
